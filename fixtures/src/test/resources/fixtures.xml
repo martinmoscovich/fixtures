@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fixtures>
+	<models>
+		<model class="com.mmoscovich.fixtures.domain.Country" />
+		<model class="com.mmoscovich.fixtures.domain.Address" type="inline" />
+		<model class="com.mmoscovich.fixtures.domain.User" />
+		
+		<group name="other">
+			<model class="com.mmoscovich.fixtures.domain.Device" />
+		</group>
+	</models>
+	
+	<reader class="com.mmoscovich.fixtures.yaml.YamlEntityReader" baseUri="fixtures" />
+	<persister class="com.mmoscovich.fixtures.persistence.hibernate.HibernateEntityLoader">
+		<config type="spring">
+			
+		</config>
+	</persister>
+</fixtures>

@@ -1,0 +1,8 @@
+&tablet
+brand: apple
+model: ipad
+---
+
+&phone
+brand: apple
+model: iphone

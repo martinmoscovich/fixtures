@@ -1,0 +1,126 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mmoscovich</groupId>
+  <artifactId>fixtures</artifactId>
+  <version>2.0.0</version>
+  <name>Fixtures Framework</name>
+  
+  <properties>
+		<!-- Maven config -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>1.6</jdk.version>
+		<maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
+		<maven-surefire-plugin.version>2.6</maven-surefire-plugin.version>
+
+		<!-- General dependencies -->
+		<org.slf4j.version>1.6.4</org.slf4j.version>
+		<junit.version>4.10</junit.version>
+		<mockito.version>1.8.4</mockito.version>
+
+		<springframework.version>3.1.2.RELEASE</springframework.version>
+		<hibernate.version>4.1.7.Final</hibernate.version>
+		<commons-dbcp.version>1.4</commons-dbcp.version>
+		<cglib.version>2.2.2</cglib.version>
+		<joda-time.version>2.1</joda-time.version>
+		<usertype.version>3.0.0.CR3</usertype.version>
+		<yamlbeans.version>1.06</yamlbeans.version>
+		<jdom.version>2.0.0</jdom.version>
+	</properties>
+  
+  <dependencies>
+  	<!-- Testing dependencies -->
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>${junit.version}</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.mockito</groupId>
+		<artifactId>mockito-all</artifactId>
+		<version>${mockito.version}</version>
+	</dependency>
+	
+	<!-- Logging (SLF4J) -->
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-log4j12</artifactId>
+		<version>${org.slf4j.version}</version>
+	</dependency>
+	
+	<!-- Yaml beans -->
+	<dependency>
+		<groupId>com.esotericsoftware.yamlbeans</groupId>
+        <artifactId>yamlbeans</artifactId>
+        <version>${yamlbeans.version}</version>
+	</dependency>
+	
+	<!-- JDOM -->
+	<dependency>
+		<groupId>org.jdom</groupId>
+		<artifactId>jdom</artifactId>
+		<version>${jdom.version}</version>
+	</dependency>
+            
+	<!-- Spring Framework -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>${springframework.version}</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>${springframework.version}</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-test</artifactId>
+		<version>${springframework.version}</version>
+	</dependency>
+	
+	
+	<!-- Hibernate -->
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-core</artifactId>
+		<version>${hibernate.version}</version>
+	</dependency>
+	
+	<!-- Utils -->
+	<dependency>
+		<groupId>cglib</groupId>
+		<artifactId>cglib</artifactId>
+		<version>${cglib.version}</version>
+		<scope>runtime</scope>
+	</dependency>
+	
+	<!-- Joda Time and its hibernate support -->
+	<dependency>
+		<groupId>joda-time</groupId>
+		<artifactId>joda-time</artifactId>
+		<version>${joda-time.version}</version>
+	</dependency>
+
+	<dependency>
+		<groupId>org.jadira.usertype</groupId>
+		<artifactId>usertype.core</artifactId>
+		<version>${usertype.version}</version>
+	</dependency>
+  </dependencies>
+      <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

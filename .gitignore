@@ -1,3 +1,17 @@
+# except for .gitignore
+!.gitignore
+
+# Ignore Eclipse Files
+.project
+.metadata
+.classpath
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch
+
+target/
+
 *.class
 
 # Package Files #

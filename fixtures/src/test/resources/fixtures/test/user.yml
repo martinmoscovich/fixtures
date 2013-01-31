@@ -1,0 +1,20 @@
+&pedro
+name: pedro
+lastname: rodriguez
+age: 20
+country: *country-argentina
+address:
+ street: corrientes
+ number: 1234
+ city: buenos aires
+---
+&kaka
+name: roberto
+lastname: kaka
+age: 24
+country: *country-brasil
+address:
+ street: callecinha
+ number: 6574
+ city: sao pablo
+

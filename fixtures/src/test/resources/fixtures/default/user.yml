@@ -1,0 +1,20 @@
+&juanperez
+name: juan
+lastname: perez
+age: 20
+country: *country-argentina
+address:
+ street: corrientes
+ number: 1234
+ city: buenos aires
+---
+&joaoronaldo
+name: joao
+lastname: ronaldo
+age: 24
+country: *country-brasil
+address:
+ street: callecinha
+ number: 6574
+ city: sao pablo
+

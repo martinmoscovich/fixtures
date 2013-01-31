@@ -1,0 +1,8 @@
+&tablet
+brand: sony
+model: s1
+---
+
+&phone
+brand: samsung
+model: galaxy s2
